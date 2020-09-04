@@ -5,7 +5,13 @@ class Point {
     }
 }
 
-class Triangle extends Point {
+class Figure extends Point{
+  constructor(x) {
+    super(x);
+  }
+}
+
+class Triangle extends Figure {
   constructor(x) {
     super(x);
   }
@@ -20,7 +26,6 @@ class Triangle extends Point {
         }
     }
 }
-
 let firstPoint = new Point(1, 2);
 let secondPoint = new Point(2, 10);
 let thirdPoint = new Point(16, -10)
