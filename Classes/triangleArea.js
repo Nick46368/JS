@@ -13,16 +13,21 @@ class Triangle {
     }
 
     triangleArea() {
-      if (typeof this.point1.x1 === "number" && typeof this.point2.x2 === "number" && typeof this.point3.x3 === "number" && typeof this.point1.y1 === "number" && typeof this.point2.y2 === "number" && typeof this.point3.y3 === "number") {
-      let distanceBetweenP1AndP2 = Math.sqrt((this.point2.x2 - this.point1.x1) ** 2 + (this.point2.y2 - this.point1.y1));
+      if (typeof this.point1.x1 === "number" && typeof this.point2.x2 === "number" 
+      && typeof this.point3.x3 === "number" && typeof this.point1.y1 === "number" 
+      && typeof this.point2.y2 === "number" && typeof this.point3.y3 === "number") {
+          
+        return 0.5 * (this.point1.x1 * this.point2.y2 + this.point2.x2 * this.point3.y3 + this.point3.x3 * this.point1.y1 
+            - this.point2.x2 * this.point1.y1 - this.point3.x3 * this.point2.y2 - this.point1.x1 * this.point3.y3)*(-1);
+      // let distanceBetweenP1AndP2 = Math.sqrt((this.point2.x2 - this.point1.x1) ** 2 + (this.point2.y2 - this.point1.y1));
 
-      let distanceBetweenP2AndP3 = Math.sqrt((this.point3.x3 - this.point2.x2) ** 2 + (this.point3.y3 - this.point2.y2));
+      // let distanceBetweenP2AndP3 = Math.sqrt((this.point3.x3 - this.point2.x2) ** 2 + (this.point3.y3 - this.point2.y2));
 
-      let distanceBetweenP3AndP1 = Math.sqrt((this.point1.x1 - this.point3.x3) ** 2 + (this.point1.y1 - this.point3.y3));
+      // let distanceBetweenP3AndP1 = Math.sqrt((this.point1.x1 - this.point3.x3) ** 2 + (this.point1.y1 - this.point3.y3));
 
-      let halfOfThePerimetr = (distanceBetweenP1AndP2 + distanceBetweenP2AndP3 + distanceBetweenP3AndP1) / 2;
+      // let halfOfThePerimetr = (distanceBetweenP1AndP2 + distanceBetweenP2AndP3 + distanceBetweenP3AndP1) / 2;
 
-      return Math.sqrt(halfOfThePerimetr * (halfOfThePerimetr - distanceBetweenP1AndP2) * (halfOfThePerimetr - distanceBetweenP2AndP3) * (halfOfThePerimetr - distanceBetweenP3AndP1));
+      // return Math.sqrt(halfOfThePerimetr * (halfOfThePerimetr - distanceBetweenP1AndP2) * (halfOfThePerimetr - distanceBetweenP2AndP3) * (halfOfThePerimetr - distanceBetweenP3AndP1));
     } else { 
     return "Exception: the area could not be calculated"
     }
