@@ -1,2 +1,2 @@
-# JS and bla-bla
+# JS and ...
 
