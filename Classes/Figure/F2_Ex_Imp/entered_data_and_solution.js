@@ -1,5 +1,5 @@
-import Point from './class_Point';
-import Triangle from './class_Triangle';
+import Point from './class_Point.js'
+import Triangle from './class_Triangle.js'
 
 let firstPoint1 = new Point(1, 2);
 let secondPoint1 = new Point(2, 10);
