@@ -1,6 +1,6 @@
 "use strict"
 const Point = require('./class_Point.js');
-const Triangle = require('./class_TriangleAndAreaMethod.js');
+const Triangle = require('./class_Triangle.js');
 
 let firstPoint1 = new Point(1, 2);
 let secondPoint1 = new Point(2, 10);
